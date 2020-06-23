@@ -48,6 +48,9 @@ src/road_fit.cpp
 add_executable( clustering
 src/clustering.cpp
 )
+add_executable( kmeans
+src/kmeans.cpp
+)
 
 target_link_libraries(ground_removal
   ${catkin_LIBRARIES}
@@ -63,6 +66,12 @@ target_link_libraries(road_fit
 )
 
 target_link_libraries(clustering
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
+  ${PCAP_INCLUDE_DIR} 
+ 
+)
+target_link_libraries(kmeans
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
   ${PCAP_INCLUDE_DIR} 

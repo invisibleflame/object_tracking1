@@ -1,4 +1,4 @@
-prefix=/home/bhuvan/object_tracking/install
+prefix=/home/bhuvan/object_tracking1/install
 
 Name: velodyne_driver
 Description: Description of velodyne_driver

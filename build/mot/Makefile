@@ -348,6 +348,21 @@ pcl_ros_gencfg/fast:
 .PHONY : pcl_ros_gencfg/fast
 
 # Convenience name for target.
+mot/CMakeFiles/kmeans.dir/rule:
+	cd /home/bhuvan/object_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 mot/CMakeFiles/kmeans.dir/rule
+.PHONY : mot/CMakeFiles/kmeans.dir/rule
+
+# Convenience name for target.
+kmeans: mot/CMakeFiles/kmeans.dir/rule
+
+.PHONY : kmeans
+
+# fast build rule for target.
+kmeans/fast:
+	cd /home/bhuvan/object_tracking/build && $(MAKE) -f mot/CMakeFiles/kmeans.dir/build.make mot/CMakeFiles/kmeans.dir/build
+.PHONY : kmeans/fast
+
+# Convenience name for target.
 mot/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
 	cd /home/bhuvan/object_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 mot/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 .PHONY : mot/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
@@ -521,6 +536,33 @@ src/ground_fit.cpp.s:
 	cd /home/bhuvan/object_tracking/build && $(MAKE) -f mot/CMakeFiles/ground_removal.dir/build.make mot/CMakeFiles/ground_removal.dir/src/ground_fit.cpp.s
 .PHONY : src/ground_fit.cpp.s
 
+src/kmeans.o: src/kmeans.cpp.o
+
+.PHONY : src/kmeans.o
+
+# target to build an object file
+src/kmeans.cpp.o:
+	cd /home/bhuvan/object_tracking/build && $(MAKE) -f mot/CMakeFiles/kmeans.dir/build.make mot/CMakeFiles/kmeans.dir/src/kmeans.cpp.o
+.PHONY : src/kmeans.cpp.o
+
+src/kmeans.i: src/kmeans.cpp.i
+
+.PHONY : src/kmeans.i
+
+# target to preprocess a source file
+src/kmeans.cpp.i:
+	cd /home/bhuvan/object_tracking/build && $(MAKE) -f mot/CMakeFiles/kmeans.dir/build.make mot/CMakeFiles/kmeans.dir/src/kmeans.cpp.i
+.PHONY : src/kmeans.cpp.i
+
+src/kmeans.s: src/kmeans.cpp.s
+
+.PHONY : src/kmeans.s
+
+# target to generate assembly for a file
+src/kmeans.cpp.s:
+	cd /home/bhuvan/object_tracking/build && $(MAKE) -f mot/CMakeFiles/kmeans.dir/build.make mot/CMakeFiles/kmeans.dir/src/kmeans.cpp.s
+.PHONY : src/kmeans.cpp.s
+
 src/road_fit.o: src/road_fit.cpp.o
 
 .PHONY : src/road_fit.o
@@ -571,6 +613,7 @@ help:
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... pcl_ros_gencfg"
 	@echo "... rebuild_cache"
+	@echo "... kmeans"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... test"
 	@echo "... std_srvs_generate_messages_eus"
@@ -587,6 +630,9 @@ help:
 	@echo "... src/ground_fit.o"
 	@echo "... src/ground_fit.i"
 	@echo "... src/ground_fit.s"
+	@echo "... src/kmeans.o"
+	@echo "... src/kmeans.i"
+	@echo "... src/kmeans.s"
 	@echo "... src/road_fit.o"
 	@echo "... src/road_fit.i"
 	@echo "... src/road_fit.s"

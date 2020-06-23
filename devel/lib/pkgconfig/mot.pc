@@ -1,4 +1,4 @@
-prefix=/home/bhuvan/object_tracking/devel
+prefix=/home/bhuvan/object_tracking1/devel
 
 Name: mot
 Description: Description of mot

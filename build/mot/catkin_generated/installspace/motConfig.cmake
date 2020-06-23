@@ -67,14 +67,14 @@ set(mot_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mot_SOURCE_PREFIX /home/bhuvan/object_tracking/src/mot)
-  set(mot_DEVEL_PREFIX /home/bhuvan/object_tracking/devel)
+  set(mot_SOURCE_PREFIX /home/bhuvan/object_tracking1/src/mot)
+  set(mot_DEVEL_PREFIX /home/bhuvan/object_tracking1/devel)
   set(mot_INSTALL_PREFIX "")
   set(mot_PREFIX ${mot_DEVEL_PREFIX})
 else()
   set(mot_SOURCE_PREFIX "")
   set(mot_DEVEL_PREFIX "")
-  set(mot_INSTALL_PREFIX /home/bhuvan/object_tracking/install)
+  set(mot_INSTALL_PREFIX /home/bhuvan/object_tracking1/install)
   set(mot_PREFIX ${mot_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bhuvan/object_tracking/install/lib;/home/bhuvan/object_tracking/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/bhuvan/object_tracking1/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

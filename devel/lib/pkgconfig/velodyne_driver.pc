@@ -1,8 +1,8 @@
-prefix=/home/bhuvan/object_tracking/devel
+prefix=/home/bhuvan/object_tracking1/devel
 
 Name: velodyne_driver
 Description: Description of velodyne_driver
 Version: 1.5.2
-Cflags: -I/home/bhuvan/object_tracking/devel/include -I/home/bhuvan/object_tracking/src/velodyne/velodyne_driver/include
+Cflags: -I/home/bhuvan/object_tracking1/devel/include -I/home/bhuvan/object_tracking1/src/velodyne/velodyne_driver/include
 Libs: -L${prefix}/lib -lvelodyne_input
 Requires: diagnostic_updater dynamic_reconfigure nodelet roscpp tf velodyne_msgs

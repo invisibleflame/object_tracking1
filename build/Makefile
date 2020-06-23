@@ -2820,6 +2820,19 @@ pcl_ros_gencfg/fast:
 .PHONY : pcl_ros_gencfg/fast
 
 #=============================================================================
+# Target rules for targets named kmeans
+
+# Build rule for target.
+kmeans: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kmeans
+.PHONY : kmeans
+
+# fast build rule for target.
+kmeans/fast:
+	$(MAKE) -f mot/CMakeFiles/kmeans.dir/build.make mot/CMakeFiles/kmeans.dir/build
+.PHONY : kmeans/fast
+
+#=============================================================================
 # Target rules for targets named pcl_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -3140,6 +3153,7 @@ help:
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... pcl_ros_gencfg"
+	@echo "... kmeans"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_eus"
 	@echo "... pcl_msgs_generate_messages_py"

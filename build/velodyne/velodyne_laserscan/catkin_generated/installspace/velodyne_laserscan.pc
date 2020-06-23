@@ -1,4 +1,4 @@
-prefix=/home/bhuvan/object_tracking/install
+prefix=/home/bhuvan/object_tracking1/install
 
 Name: velodyne_laserscan
 Description: Description of velodyne_laserscan

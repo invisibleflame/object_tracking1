@@ -67,14 +67,14 @@ set(velodyne_driver_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(velodyne_driver_SOURCE_PREFIX /home/bhuvan/object_tracking/src/velodyne/velodyne_driver)
-  set(velodyne_driver_DEVEL_PREFIX /home/bhuvan/object_tracking/devel)
+  set(velodyne_driver_SOURCE_PREFIX /home/bhuvan/object_tracking1/src/velodyne/velodyne_driver)
+  set(velodyne_driver_DEVEL_PREFIX /home/bhuvan/object_tracking1/devel)
   set(velodyne_driver_INSTALL_PREFIX "")
   set(velodyne_driver_PREFIX ${velodyne_driver_DEVEL_PREFIX})
 else()
   set(velodyne_driver_SOURCE_PREFIX "")
   set(velodyne_driver_DEVEL_PREFIX "")
-  set(velodyne_driver_INSTALL_PREFIX /home/bhuvan/object_tracking/install)
+  set(velodyne_driver_INSTALL_PREFIX /home/bhuvan/object_tracking1/install)
   set(velodyne_driver_PREFIX ${velodyne_driver_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bhuvan/object_tracking/install/lib;/home/bhuvan/object_tracking/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/bhuvan/object_tracking1/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
