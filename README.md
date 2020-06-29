@@ -1,13 +1,13 @@
 # object_tracking
 
-###roscore
+### roscore
 
-###this repo contains the bagfile (example.bag) too.
+### this repo contains the bagfile (example.bag) too.
 
-###cd object_tracking1
+### cd object_tracking1
 
-###rosbag play -l example.bag
+### rosbag play -l example.bag
 
-###source devel/setup.bash
+### source devel/setup.bash
 
-###rosrun mot kmeans
+### rosrun mot kmeans
