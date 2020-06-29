@@ -2,9 +2,7 @@
 
 ### roscore
 
-### this repo contains the bagfile (example.bag) too.
-
-### cd object_tracking1
+### download bagfile from https://github.com/anshulg825/Sedrica-Random-Codes/tree/master/Codes  (example.bag)
 
 ### rosbag play -l example.bag
 
